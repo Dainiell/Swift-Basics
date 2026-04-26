@@ -1,7 +1,7 @@
-var name = "Ralph"
-var age = 20
-var height = 5.5
-var isStudent = true
+let name = "Ralph"
+let age = 20
+let height = 5.5
+let isStudent = true
 
 print("Hi my name is \(name)")
 print("and i'm \(age) years old")
