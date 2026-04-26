@@ -1,0 +1,6 @@
+*.exe
+*.exp
+*.lib
+.build/
+.vscode/
+run-swift.bat
