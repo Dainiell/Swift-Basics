@@ -20,16 +20,17 @@ let price = 120.75
 let quantity = 3
 let discount = 50
 
-var total = price * Double(quantity)
+let total = price * Double(quantity)
 let discountedTotal = total - Double(discount)
 
 if Double(money) >= total {
     let buy = Double(money) - total
     print("You can buy without discount \n Remaining: \(buy)")
-    
+
 }else if Double(money) >= discountedTotal {
-    let afterDiscount = Double(money) - discountedTotal
-    print("You can buy without discount \n Remaining: \(afterDiscount)")
+    let buy = Double(money) - discountedTotal
+    print("You can buy without discount \n Remaining: \(buy)")
+
 }else {
     let need = discountedTotal - Double(money)
     print("Not enough money \n Need: \(need) more")
