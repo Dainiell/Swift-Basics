@@ -8,4 +8,4 @@ var expenses = food + Double(transport) + entertainment
 var pocketmoney = Double(startingMoney) - expenses
 var perPerson = Int(pocketmoney) / people
 
-print("Total expenses: \(expenses) , Remaining money: \(pocketmoney) , Each person gets: \(perPerson)")
+print("Total expenses: \(expenses) \n Remaining money: \(pocketmoney) \n Each person gets: \(perPerson)")

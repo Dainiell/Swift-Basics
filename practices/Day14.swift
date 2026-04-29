@@ -1,3 +1,4 @@
+// PART 1
 let price = 250.75
 let quantity = 2
 let isVIP = true
@@ -30,16 +31,26 @@ print("Subtotal: \(subTotal)")
 print("Final total: \(finalTotal)")
 
     
-// TBA
+// PART 2
 let ticketPrice = 200.0
 let quantity = 3
 let isStudent = true
 let isSenior = false
 
-let subtotal = ticketPrice * quantity
-let Seniordiscount = 
+let subtotal = ticketPrice * Double(quantity)
+let Seniordiscount = subtotal * 0.20 
+let Studentdiscount = subtotal * 0.10
 
+let finalTotal: Double 
 
 if isSenior {
-
+    finalTotal = subtotal - Seniordiscount
+}else if isStudent {
+    finalTotal = subtotal - Studentdiscount
+}else {
+    finalTotal = subtotal
 }
+
+
+print("Subtotal: \(subtotal)")
+print("Final total: \(finalTotal)")
