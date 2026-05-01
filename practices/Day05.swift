@@ -1,7 +1,12 @@
-let x = 5
-let y = 2.5
+let userName: String = "Ralph"
+let dailyGoal: Int  = 10000
+var currentSteps: Int = 2500
+var isGoalCompleted: Bool = false
 
-let value = Double (x) + y
+currentSteps = 10000
+isGoalCompleted = true 
 
-print("The results is \(value)")
-print("Thankyou")
+print("User: \(userName)")
+print("Daily Goal: \(dailyGoal)")
+print("Current Steps: \(currentSteps)")
+print("Goal Completed: \(isGoalCompleted)")

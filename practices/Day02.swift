@@ -1,9 +1,13 @@
-let name = "Ralph"
-let age = 20
-let height = 5.5
-let isStudent = true
+let productName = "Mouse"
+let price = 800.0
+var quantity = 1
 
-print("Hi my name is \(name)")
-print("and i'm \(age) years old")
-print("and i'm \(height) tall")
-print("and the rumors are \(isStudent) that i'm still a student")
+
+var subtotal = price * Double(quantity)
+quantity = 3
+var updatedTotal = price * Double(quantity)
+
+print("First subtotal: \(subtotal)")
+print("Updated subtotal: \(updatedTotal)")
+
+

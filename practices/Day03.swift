@@ -1,5 +1,11 @@
-var money = 1000
-money = money - 250 
-money = money + 500
+let productName = "iPhone Case"
+let price = 499.0
+var cartQuantity = 1
 
-print("Final money is, \(money)");
+let firstsubtotal = price * Double(cartQuantity)
+cartQuantity = 4
+let subtotal = price * Double(cartQuantity)
+
+print("Product: \(productName)")
+print("First Total: \(firstsubtotal)")
+print("Updated Total: \(subtotal)")

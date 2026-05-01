@@ -1,19 +1,21 @@
-//Task 1
-var money = 500
+// let productName: String = "USB-C Cable"
+// let price: Double = 299.0
+// let quantity: Int = 3 
 
-money = money - 120 
-money = money - 80
-money = money + 200
-money = money - 50
+// let total: Double = price * Double(quantity)
 
-print("Final money: \(money)")
-
+// print("Product: \(productName)")
+// print("Total: \(total)")
 
 
-//Task 2
-var x = 5
-var y = 2.5
 
-var result = Double(x) + y  
+//part 2
+let videoTitle: String = "Swift Basics"
+let fileSizeMB: Double = 125.5
+let numberOfDownloads: Int = 4
 
-print("Result: \(result)")
+let totalStorage: Double = fileSizeMB * Double(numberOfDownloads)
+
+print("Video: \(videoTitle)")
+print("Total Storage Used: \(totalStorage) MB ")
+
