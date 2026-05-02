@@ -1,42 +1,13 @@
-//part 1
-let originalPrice = 1000.0
-let studentDiscount = 150
-let vipDiscount = 250
-let isStudent = true
-let isVIP = false
+let userName: String = "Ralph"
+var subscriptionPlan: String? = nil
 
 
-let vip = originalPrice - Double(vipDiscount) 
-let student = originalPrice - Double(studentDiscount) 
+print("User: \(userName)")
 
-if isVIP == true {
-    print("VIP discount applied \n Final price: \(vip)")
-}else if isStudent == true {
-    print("Student discount applied \n Final price: \(student)")
+if let Plan = subscriptionPlan {
+    print("Plan: \(Plan)")
+    
 }else {
-    print("No discount applied \n Final price: \(originalPrice)")   
-}
-
-
-//part 2
-let originalPrice = 1000.0
-let studentDiscount = 150
-let vipDiscount = 250
-let isStudent = true
-let isVIP = false
-
-
-let vip = originalPrice - Double(vipDiscount) 
-let student = originalPrice - Double(studentDiscount) 
-let VipStudent = originalPrice - Double(vipDiscount) - Double(studentDiscount) 
-
-if isVIP && isStudent {
-    print("VIP + Student discount applied \n Final price: \(VipStudent)")
-}
- else if isVIP == true {
-    print("VIP discount applied \n Final price: \(vip)")
-}else if isStudent == true {
-    print("Student discount applied \n Final price: \(student)")
-}else  {
-    print("No discount applied \n Final price: \(originalPrice)")   
+    print("Plan: No active plan")
+    
 }
