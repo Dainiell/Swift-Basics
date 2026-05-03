@@ -12,4 +12,3 @@ if let Plan = subscriptionPlan {
     
 }
 
-//update
