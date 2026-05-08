@@ -41,4 +41,3 @@ if let quantity = Int(quantityText) {
     print("Total: Error")
     
 }
-//end

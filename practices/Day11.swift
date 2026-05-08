@@ -10,3 +10,5 @@ if let user = nickName {
 }else {
     print("Nickname: No nickname set")
 }
+
+//end 
