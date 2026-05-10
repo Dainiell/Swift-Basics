@@ -1,14 +1,16 @@
-let productName = "iPhone Case"
-let price = 499.0
-var cartQuantity = 1
+var inventory: [String] = ["Sword", "Shield", "Potion"]
 
-let firstsubtotal = price * Double(cartQuantity)
-cartQuantity = 4
-let subtotal = price * Double(cartQuantity)
+inventory.append("Armor")
+inventory.insert("Ring", at: 0)
 
-print("Product: \(productName)")
-print("First Total: \(firstsubtotal)")
-print("Updated Total: \(subtotal)")
+print("Inventory Count: \(inventory.count)")
 
+if let first = inventory.first {
+    print("First: \(first)")
+}
 
-//end
+if let last = inventory.last {
+    print("Last: \(last)")
+}
+
+print("Index 2: \(inventory[2])")
