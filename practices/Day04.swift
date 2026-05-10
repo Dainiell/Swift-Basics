@@ -1,11 +1,26 @@
-let username: String = "ralph_ios"
-let age: Int = 19
-let height: Double = 5.7
-let isStudent: Bool = true
+var recentGames: [String] = ["Chess", "Scrabble", "Poker"]
 
-print("Username: \(username)")
-print("Age: \(age)")
-print("Height: \(height)")
-print("Student: \(isStudent)")
 
-//end
+if let firstgame = recentGames.first {
+    print("First Game: \(firstgame)")
+    
+}else {
+    print("No first game")
+    
+}
+
+print("Last Game: \(recentGames.last ?? "No last game")")
+
+recentGames.removeLast()
+
+print("Last Game: \(recentGames.last ?? "No recent game")")
+
+recentGames.removeAll()
+
+if let games = recentGames.first {
+    print("First Game: \(games)")
+    
+}else {
+    print("No recent games")
+    
+}
