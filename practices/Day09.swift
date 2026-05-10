@@ -1,14 +1,29 @@
-let userName: String = "Ralph"
-var userEmail: String? = nil
+var orders: [String] = ["Burger", "Fries", "Pizza", "Burger", "Milk Tea"]
 
+print("Burger in orders: \(orders.contains("Burger"))")
 
-userEmail = "ralph@email.com"
+if let index = orders.firstIndex(of: "Burger") {
+    print("First Burger at index: \(index)")
+    
+}
+ 
+for item in orders {
+    
+    if item == "Burger" {
+        print("Duplicate Order: \(item)")
+        
+    }else {
+        print("Order: \(item)")
+        
+    }
 
-
-print("User: \(userName)")
-
-if let Email = userEmail {
-    print("Email: \(Email)")
 }
 
-//end 
+if let index = orders.firstIndex(of: "Burger") {
+    orders.remove(at: index)
+}
+
+print("Burger still in orders: \(orders.contains("Burger"))")
+
+
+print("Updated Count: \(orders.count)")
