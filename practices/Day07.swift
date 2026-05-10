@@ -1,20 +1,20 @@
-let customerName: String = "Ralph"
-let productName: String = "Wireless Charger"
-let price: Double = 899.0
-var quantity: Int = 1
-let shippingFee: Double = 75.0
-
-let firstQuantity: Int = quantity
-let total: Double = price * Double(quantity) + shippingFee
-quantity = 3
-let newTotal: Double = price * Double(quantity) + shippingFee 
+var Chats: [String] = ["Mom", "Best Friend", "Group Chat"]
 
 
-print("Customer: \(customerName)")
-print("Product: \(productName)")
-print("First Quantity: \(firstQuantity)")
-print("First Total: \(total)")
-print("Updated Quantity: \(quantity) ")
-print("Updated Total: \(newTotal)")
+Chats.append("Teacher")
+Chats.insert("Girlfriend",at: 0)
 
-//end
+
+print("Total Pinned Chats: \(Chats.count)")
+
+print("First: \(Chats.first ?? "No first chat")")
+print("Last: \(Chats.last ?? "No last chat")")
+
+if let index = Chats.firstIndex(of: "Group Chat") {
+    Chats.remove(at: index)
+}
+
+for (index , Chats) in Chats.enumerated() {
+    print("[\(index)] \(Chats)")
+    
+}

@@ -1,22 +1,31 @@
-// let productName: String = "USB-C Cable"
-// let price: Double = 299.0
-// let quantity: Int = 3 
-
-// let total: Double = price * Double(quantity)
-
-// print("Product: \(productName)")
-// print("Total: \(total)")
+var cart: [String] = ["Shoes", "Shirt", "Pants", "Shoes", "Hat"]
 
 
 
-//part 2
-let videoTitle: String = "Swift Basics"
-let fileSizeMB: Double = 125.5
-let numberOfDownloads: Int = 4
+print("Shoes in cart: \(cart.contains("Shoes"))")
 
-let totalStorage: Double = fileSizeMB * Double(numberOfDownloads)
+if let index = cart.firstIndex(of: "Shoes") {
+    print("First Shoes at index: \(index)")
+} else {
+    print("Item not found")
+}
 
-print("Video: \(videoTitle)")
-print("Total Storage Used: \(totalStorage) MB ")
 
-//end
+for item in cart {
+
+    if item == "Shoes" {
+        print("Duplicate: \(item)")
+        
+    }else {
+        print("Item: \(item)")
+        
+    }
+
+}
+
+
+cart.removeFirst()
+
+print("Shoes in cart: \(cart.contains("Shoes"))")
+
+print("Updated Count: \(cart.count)")
