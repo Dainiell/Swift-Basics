@@ -1,21 +1,22 @@
-let customerName: String = "Ralph"
-let restaurantName: String = "Burger House"
-let mealPrice: Double = 149.0
-var quantity:Int  = 2
-let deliveryFee: Double = 50.0
+var reminders: [String] = ["Submit Assignment", "Charge Laptop", "Review Swift"] 
+
+reminders.append("Drink Water")
+reminders.insert("Wake Up", at: 0)
+
+print("Total Reminders: \(reminders.count)")
+
+print("First: \(reminders.first ?? "No first reminder")")
+print("Last: \(reminders.last ?? "No last reminder")")
 
 
-let firstQuantity:Int = quantity
-let firstTotal:Double = mealPrice * Double(firstQuantity) + deliveryFee
-quantity = 4
-let updatedTotal:Double = mealPrice * Double(quantity) + deliveryFee
+if let index = reminders.firstIndex(of: "Charge Laptop") {
+    reminders.remove(at: index)
+}
 
 
-print("Customer: \(customerName)")
-print("Restaurant: \(restaurantName)")
-print("First Quantity: \(firstQuantity)")
-print("First Total: \(firstTotal)")
-print("Updated Quantity: \(quantity) ")
-print("Updated Total: \(updatedTotal)")
+for (index,goals) in reminders.enumerated() {
+    print("[\(index)] \(goals)")
+    
+}
 
-//end
+
