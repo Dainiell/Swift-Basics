@@ -1,19 +1,13 @@
-let appName:String = "SwiftQuest"
-var playerName: String? = nil 
-var playerScore: Int = 0
-var playerLevel: Double = 1.0 
+let day = "Monday"
+let dailyTemperature = 75 
+print("Today is \(day). Raise and Shine!")
+print("The temperature on \(day) is  \(dailyTemperature)°F")
+var Temperature = 70
+print("The temperature on \(day) morning is \(Temperature)°F")
 
+Temperature = 80 
+print("The temperature on \(day) evening is  \(Temperature) °F")
+let weeklyTemperature = 75
 
-playerName = "Ralph"
+print("The average temperature this week is \(dailyTemperature)°F")
 
-print("App: \(appName)")
-
-if let name = playerName {
-    print("Player: \(name)")
-}else {
-    print("Set your name: ")
-    
-}
-
-print("Score: \(playerScore)")
-print("Level: \(playerLevel)")

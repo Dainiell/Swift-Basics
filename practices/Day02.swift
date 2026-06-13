@@ -1,16 +1,26 @@
-let welcomeMessage: String = """
-Welcome to SwiftQuest!
-The #1 Swift Learning App
-Start your journey today.
-""" 
+let levelScore = 10 
+var gameScore = 0 
 
-var username: String = "Ralph"
-var  level: Int = 1 
-var xpPoints: Double = 0.0  
-var isPremium:  Bool = false 
+gameScore += levelScore 
 
+print("The game's score is \(gameScore)")
+var levelBonusScore  = 10.0 
+levelBonusScore = 20 
 
-print("\(welcomeMessage)")
-print("---")
+print("The game's score is \(levelBonusScore)")
 
-print("Player: \(username) | Level: \(level) | XP: \(xpPoints) | Premium: \(isPremium)")
+gameScore +=  Int(levelBonusScore)
+print("The game's final score is \(gameScore)")
+
+let levelLowestScore  = 50 
+let levelHighestScore = 99 
+let levels = 10 
+
+let levelScoreDifference = levelHighestScore - levelLowestScore 
+print("\(levelScoreDifference)")
+
+let levelAverageScore = levelScoreDifference / levels 
+print("The level's average score is \(levelAverageScore)")
+
+let averageLevelScore = Double (levelScoreDifference) / Double(levels)
+print("The level's average score is \(averageLevelScore)")

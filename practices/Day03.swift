@@ -1,13 +1,16 @@
-let originalPrice: Double = 1200.0
-let discountPercent: Double = 25.0
+let day = "Monday"
+print("Today is \(day)")
+let hour = "6"
+let minutes = "15"
+let period = "PM"
+var time  = hour + ":" + minutes + " " + period
+print("It is \(time) on \(day)")
+
+let timezone = "PST"
+time += " \(timezone)"
+print("it is  \(time) on \(day)")
 
 
-let defaultPrice = originalPrice * discountPercent / 100
-let discountedPrice = originalPrice - defaultPrice
-
-print("Discount amount: \(defaultPrice)")
-print("Final price: \(discountedPrice)")
-
-
-
-
+let shortDay = day.prefix(3)
+print("Today is \(shortDay)")
+print("it is \(time) on \(shortDay)")
