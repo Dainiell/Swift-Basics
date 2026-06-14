@@ -10,4 +10,3 @@ print("The temperature on \(day) evening is  \(Temperature) °F")
 let weeklyTemperature = 75
 
 print("The average temperature this week is \(dailyTemperature)°F")
-
