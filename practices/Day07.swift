@@ -30,7 +30,7 @@ for Level in 1...Levels {
     print("Playing level \(Level)")
 
     if Level == freeLevels {
-        print("You've played all \(freeLevels) free levels. Buy the full game to access \(bonusLevels) more levels!")
+       print("You have played all \(freeLevels) free levels. Buy the game to play the remaining \(Levels - freeLevels) levels.")
         break
         
     }
