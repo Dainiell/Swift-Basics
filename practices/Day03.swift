@@ -1,16 +1,19 @@
-let day = "Monday"
-print("Today is \(day)")
-let hour = "6"
-let minutes = "15"
-let period = "PM"
-var time  = hour + ":" + minutes + " " + period
-print("It is \(time) on \(day)")
+// let credentials = (Password:"", Passcode: -1111)
 
-let timezone = "PST"
-time += " \(timezone)"
-print("it is  \(time) on \(day)")
+// if credentials.0 == "" || credentials.1 < 0 {
+//     print("Invalid Credential!")
+    
+// }else {
+//     print("The username is  \(credentials.0) and the password is \(credentials.1).")
+    
+// }
 
+let fullCredentials = (Password:"pass", Passcode: 1111)
 
-let shortDay = day.prefix(3)
-print("Today is \(shortDay)")
-print("it is \(time) on \(shortDay)")
+if fullCredentials.Password == "" || fullCredentials.Passcode < 0 {
+    print("Invalid Credentials")
+    
+}else {
+    print("The username is  \(fullCredentials.Password) and the password is \(fullCredentials.Passcode).")
+    
+}
