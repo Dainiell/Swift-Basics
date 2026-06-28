@@ -1,29 +1,70 @@
-let levelScores = ["1": 10, "2": 20, "3": 30, "4": 40, "5": 50, "6": 60, "7": 70] 
+var grade: Int = 82 
 
-for (level,score) in levelScores {
-    print("The score of level \(level) is \(score).")
+if grade <= 100 && grade >= 90 {
+    print("Passed A+")
+    
+}else if grade <= 85 && grade >= 80 {
+    print("Passed B+")
+    
+}else {
+    print("Failed D-")
     
 }
-var gameScore = 0
 
-for (_, score) in levelScores {
-    gameScore += score
+
+
+var smartPhone = "Iphone" 
+
+switch smartPhone {
+    case "Android": print("You are using Android Smartphone")
+    case "Iphone": print("You are using Iphone Smartphone")
+    default: print("Please select you specific Smartphone Operating System")
+    
+
 }
 
-print("Final game score: \(gameScore)")
 
-let weeklyTemperatures = ["Monday": 70, "Tuesday": 75, "Wednesday": 80, "Thursday": 85, "Friday": 90, "Saturday": 95, "Sunday": 100] 
+let totalCalories = 480.0
+let totalServings = 4 
+
+let caloriesPerServing: Double = totalCalories / Double(totalServings)
+print("The total calories per serving is \(caloriesPerServing)")
 
 
-for (day,temp) in weeklyTemperatures {
-    print("Today is \(day) and its currently \(temp) ")
+let cookingTimeInMinutes = 95
+
+let hours = cookingTimeInMinutes / 60
+let mins = cookingTimeInMinutes % 60 
+
+print("\(hours) hour and \(mins) minutes")
+
+
+var currentStreak = 5 
+let studiedToday = true 
+
+if studiedToday == true {
+    currentStreak += 1 
+    print("Your current streak today is \(currentStreak)")
     
 }
- 
-let days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"] 
 
-let temperatures = [70, 75, 80, 85, 90, 95, 100] 
 
-for index in 0...6 {
-    print("\(days[index]) temperature is \(temperatures[index]).")
+let cookingTimeInMinutes = 45 
+
+if cookingTimeInMinutes <= 15 {
+    print("Easy")
+    
+}else if cookingTimeInMinutes <= 45 || cookingTimeInMinutes >= 15 {
+    print("Medium")
+    
+}else if cookingTimeInMinutes >= 46 {
+    print("Hard")
+    
+}
+
+
+switch cookingTimeInMinutes {
+    case 0...15: print("Easy")
+    case 16...45: print("Medium")
+    default: print("Hard")
 }
