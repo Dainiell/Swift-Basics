@@ -1,19 +1,34 @@
-// let credentials = (Password:"", Passcode: -1111)
+let freeApp = true 
 
-// if credentials.0 == "" || credentials.1 < 0 {
-//     print("Invalid Credential!")
-    
-// }else {
-//     print("The username is  \(credentials.0) and the password is \(credentials.1).")
-    
-// }
+if freeApp == true {
+    print("You are using the free version of the app. Buy the full version of the app to get access to all of its features.")
+}
 
-let fullCredentials = (Password:"pass", Passcode: 1111)
+let morningTemperature = 70 
+let eveningTemperature = 80 
 
-if fullCredentials.Password == "" || fullCredentials.Passcode < 0 {
-    print("Invalid Credentials")
+
+if morningTemperature < eveningTemperature {
+    print("It is coolder on Evening Time")
     
 }else {
-    print("The username is  \(fullCredentials.Password) and the password is \(fullCredentials.Passcode).")
+    print("It is coolder on Morning Time")
+}
+
+
+let temperatureDegree = "Fahrenheit" 
+
+
+if temperatureDegree == "Fahrenheit" {
+    print("The app is using Fahrenheit Degrees")
     
+}else {
+    print("The app is using Celsius Degrees")
+}
+
+switch temperatureDegree  {
+case "Fahrenheit": print("Your using Fahrenheit Degrees")
+case "Celsius":print("Your using Celsius Degrees")
+default: print("The Application has a wrong configuration!")
+
 }
