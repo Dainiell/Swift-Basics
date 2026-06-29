@@ -117,3 +117,13 @@ while ingredientStock > 0 {
     print("Your Current Streak is \(streak)")
     
  }
+
+
+
+
+
+
+ for evenNumb in stride(from: 90, through: 150, by:5) {
+    print(evenNumb)
+    
+ }
