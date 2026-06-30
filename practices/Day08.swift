@@ -1,111 +1,111 @@
-// var username: String? = "Ralph"
-// var score: Int? = nil
+var username: String? = "Ralph"
+var score: Int? = nil
 
-// print(username!)
-
-
-
-// var age: Int? = 19
-// var year: Int! = nil
-
-// print("My Age is \(age!)")
+print(username!)
 
 
-// if year == nil {
-//     print("You did not enter year")
+
+var age: Int? = 19
+var year: Int! = nil
+
+print("My Age is \(age!)")
+
+
+if year == nil {
+    print("You did not enter year")
     
-// }else {
-//     print("You are \(age!) and you was born in the year \(year!)")
+}else {
+    print("You are \(age!) and you was born in the year \(year!)")
     
-// }
+}
 
-// var username: String? = "ralph_dev"
-// var password: String? = nil  
+var username: String? = "ralph_dev"
+var password: String? = nil  
 
 
-// if let user = username {
-//     if let pass = password {
-//         print("Login Successful \(user)")
+if let user = username {
+    if let pass = password {
+        print("Login Successful \(user)")
         
-//     }else  {
-//         print("Please enter your password")
+    }else  {
+        print("Please enter your password")
         
-//     }
-// }else {
-//     print("Please enter your username")
+    }
+}else {
+    print("Please enter your username")
     
-// }
+}
 
 
-// var customerName: String? = "Ralph Dainiell"
-// var discountCode: String? = nil
-// var deliveryNotes: String? = "Leave at the gate"
-// var totalAmount: Double? = 1250.50
+var customerName: String? = "Ralph Dainiell"
+var discountCode: String? = nil
+var deliveryNotes: String? = "Leave at the gate"
+var totalAmount: Double? = 1250.50
 
 
-// if let customer = customerName {
-//     print("Customer: \(customer)") 
-// }    
-//     else {
-//         print("Guest checkout")
+if let customer = customerName {
+    print("Customer: \(customer)") 
+}    
+    else {
+        print("Guest checkout")
         
-//     }
-// if discountCode == nil {
-//     print(discountCode ?? "No discount applied")
+    }
+if discountCode == nil {
+    print(discountCode ?? "No discount applied")
     
-//     }else {
-//         print(discountCode!)
+    }else {
+        print(discountCode!)
     
-// }
-// if deliveryNotes == nil  {
-//     print(deliveryNotes ?? "No special instructions")
+}
+if deliveryNotes == nil  {
+    print(deliveryNotes ?? "No special instructions")
     
-//     }else {
-//         print(deliveryNotes!)
+    }else {
+        print(deliveryNotes!)
         
-//     }
+    }
     
-// if totalAmount != nil {
-//     print("Total: ₱\(totalAmount!)")
+if totalAmount != nil {
+    print("Total: ₱\(totalAmount!)")
     
-// }else {
-//     print("Total amount not available.")
+}else {
+    print("Total amount not available.")
     
-// }
+}
  
 
-// var nickname: String? = nil
-// var age: Int? = 22
-// var emergencyContact: String? = nil
-// var address: String? = "Silang, Cavite" 
+var nickname: String? = nil
+var age: Int? = 22
+var emergencyContact: String? = nil
+var address: String? = "Silang, Cavite" 
 
 
-// if let name = nickname {
-//     print("Nickname: \(name)")
+if let name = nickname {
+    print("Nickname: \(name)")
     
-//     }else {
-//         print("No nickname set.")
-//     }
+    }else {
+        print("No nickname set.")
+    }
 
-// if age != nil {
-//     print("Age: \(age!)")
-//     }
+if age != nil {
+    print("Age: \(age!)")
+    }
 
 
-// if emergencyContact != nil {
-//     print(emergencyContact!)
+if emergencyContact != nil {
+    print(emergencyContact!)
     
-//     }else {
-//         print(emergencyContact ?? "Not provided")
-//     }
+    }else {
+        print(emergencyContact ?? "Not provided")
+    }
 
-// if let place = address {
-//     print("Address: \(place)")
+if let place = address {
+    print("Address: \(place)")
     
-//     }else {
-//         print("No address on file ")
+    }else {
+        print("No address on file ")
         
-//     }
+    }
 
 
 
