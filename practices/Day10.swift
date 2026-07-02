@@ -43,3 +43,11 @@ while remainingSteps > 0 {
     print("Remaining: \(remainingSteps)")
     
 }
+
+
+var parkings: [String] = ["Back parking", "Nose parking", "Parallel parking"]
+
+parkings[1] = "leave me"
+
+print(parkings)
+
