@@ -1,29 +1,45 @@
-struct Recipe {
-    let name: String 
-    var ingredients: Set<String>
-    var steps: [String]
-    func printDescription() {
-        print("Recipe: \(name)")
-        print("Ingredients: \(ingredients)")
-        for (index, step) in steps.enumerated() {
-            print("\(index + 1). \(step).")           
-        }
-        
-    }
+var isFirstLaunch: Bool = true 
+
+if isFirstLaunch == true {
+    print("Welcome! Let's get started.")
+    
+}else {
+    print("Welcome back!")
+    
 }
 
-let cookiesRecipe = Recipe( 
-    name: "Chocolate Cookie", 
-    ingredients: [
-        "Cocoa Powder",
-        "Chocolate chip",
-        "Flour"
-    ], steps: [
-        "Action 1",
-        "Action 2",
-        "Action 3"
-    ]
 
-)
+var selectedUniversity: String? = nil 
 
-cookiesRecipe.printDescription()
+
+if let university = selectedUniversity  {
+    print("University : \(university)")
+    
+}else {
+    print("No university selected")
+    
+}
+
+var onboardingSteps: [String] = ["Create Account", "Pick university", "Set up profile"]    
+
+for (index, step) in onboardingSteps.enumerated() {
+    print("Step \(index + 1): \(step)")
+}
+
+
+var currentStep: Int = 2
+
+switch currentStep {
+    case 1: print("Account set up")
+    case 2: print("University Selection")
+    case 3: print("Profile set up")
+    default: print("Unknown step")
+}
+
+var remainingSteps = 3
+
+while remainingSteps > 0 {
+    remainingSteps -= 1
+    print("Remaining: \(remainingSteps)")
+    
+}
